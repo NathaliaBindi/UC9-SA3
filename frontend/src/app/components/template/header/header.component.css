@@ -1,0 +1,31 @@
+.header {
+        position: sticky;
+        top: 0;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+}
+
+.header .logo {
+        max-height: 40px;
+        position: fixed;
+        top: 0;
+}
+
+.header a{
+        cursor: pointer;
+}
+
+.header i{
+        font-size: 22px;
+}
+
+.header  .right-group i{ 
+        padding-left: 15px;
+}
+
+.header i:hover{
+        color: #CF4F4F;
+}
