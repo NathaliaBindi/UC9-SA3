@@ -12,6 +12,8 @@ import { HeroComponent } from './components/template/hero/hero.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
+import { CategoriasComponent } from './components/template/categorias/categorias.component';
+import { NewsletterComponent } from './components/template/newsletter/newsletter.component';
 
 
 
@@ -24,6 +26,8 @@ import { LoginComponent } from './views/login/login.component';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    CategoriasComponent,
+    NewsletterComponent,
   ],
   imports: [
     BrowserModule,

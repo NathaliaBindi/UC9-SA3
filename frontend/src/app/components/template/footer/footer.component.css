@@ -1,5 +1,4 @@
 .footer {
-        position: fixed;
         bottom: 0;
         height: 300px;
         max-width: 1200px;
@@ -76,4 +75,12 @@
         position: fixed;
         bottom: 0;
         right: 43%;
+}
+
+.footer .instagram { 
+        max-height: 40px;
+        padding-left: 30px;
+}
+.footer .facebook { 
+        max-height: 40px;
 }
