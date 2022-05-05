@@ -1,0 +1,79 @@
+.footer {
+        position: fixed;
+        bottom: 0;
+        height: 300px;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 20px;
+}
+
+.footer .footer-links{
+        font-size: 15px;
+}
+
+.footer a{
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 15px;
+}
+
+
+.footer a:hover{
+        color: #B82020;
+}
+
+.footer .coluna-01{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+}
+
+.footer .titulo{
+        padding-bottom: 15px;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        font-weight: bold;        
+}
+
+.footer .coluna-02{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+}
+
+.footer .coluna-03 {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+}
+
+.footer .coluna-04 {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+}
+
+.footer .coluna-05 {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+}
+
+.footer .logotipo {
+        max-height: 20px;
+        top: 0;
+}
+
+.footer .marca {
+        position: fixed;
+        bottom: 0;
+        right: 43%;
+}

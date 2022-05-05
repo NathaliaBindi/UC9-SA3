@@ -1,14 +1,12 @@
 <mat-toolbar class="header mat-elevation-z5 bg-black ">
         <span class="left-group">
-                <a>
                         <i class="material-icons v-middle text-white">
                                 menu
                         </i>
-                </a>
         </span>
 
         <span>
-                <a>
+                <a routerLink="/">
                         <img class="logo v-middle" src="assets/img/logotipos/logo.png" alt="logo">
                 </a>
         </span>
@@ -20,7 +18,7 @@
                         </i>
                 </a>
 
-                <a>
+                <a routerLink="login">
                         <i class="material-icons v-middle text-white">
                                 account_circle
                         </i>
@@ -33,3 +31,4 @@
                 </a>
         </span>
 </mat-toolbar>
+<router-outlet></router-outlet>
