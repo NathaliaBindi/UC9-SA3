@@ -1,1 +1,90 @@
-<p>login works!</p>
+<span class="forms-title-group bg-white">
+                <h1 class="forms-title">identificação</h1>
+</span>
+<div class="forms bg-white">
+        <form (ngSubmit)="submit()" class="forms-login">
+                <span class="forms-login-group-text">
+                        <h2 class="forms-login-text">já tenho cadastro</h2>                        
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <input type="email" pInputText />
+                        <label for="float-input">E-mail</label>
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <i class="pi pi-eye"></i>
+                        <input type="password" pInputText />
+                        <label for="float-input">Senha</label>
+                </span>
+                <button pButton pRipple type="button" label="ENTRAR" class="p-button-raised p-button-danger"></button>
+
+                <span class="recuperacao">
+                        <a class="recuperacao-link">
+                                esqueci meu login
+                        </a>
+                        <a class="recuperacao-link">
+                                esqueci minha senha
+                        </a>
+                </span>
+
+                <div class="linha-horizontal"></div>
+
+                <div class="acesso-alternativo">
+                        
+                        <span class="acesso-titulo">
+                                <h3 class="acesso-titulo">acesse com as redes sociais</h3>
+                        </span>
+
+                        <div class="acesso-links">                        
+                                <a acesso-links>
+                                        <img class="acesso-imagem" src="assets/img/logincadastro/footerfacebook.png" alt="Acesso pelo facebook">
+                                </a>
+                                <a>
+                                        <img class="acesso-imagem" src="assets/img/logincadastro/footergoogle.png" alt="Acesso pelo facebook">
+                                </a>
+                        </div>
+                </div>
+
+        </form>
+
+        <div class="linha-vertical"></div>
+        
+        <form (ngSubmit)="submit()" class="forms-login">
+                <span class="forms-login-group-text">
+                        <h2 class="forms-login-text">quero me cadastrar</h2>                        
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <input type="email" pInputText />
+                        <label for="float-input">E-mail</label>
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <i class="pi pi-eye"></i>
+                        <input type="password" pInputText />
+                        <label for="float-input">Crie sua senha</label>
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <i class="pi pi-eye"></i>
+                        <input type="password" pInputText />
+                        <label for="float-input">Confirme sua senha</label>
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <i class="pi pi-eye"></i>
+                        <input type="password" pInputText />
+                        <label for="float-input">CPF ou CPNJ</label>
+                </span>
+
+                <span class="p-input-icon-right p-float-label">
+                        <i class="pi pi-eye"></i>
+                        <input type="password" pInputText />
+                        <label for="float-input">CEP</label>
+                </span>
+                <button pButton pRipple type="button" label="CADASTRAR" class="p-button-outlined p-button-danger"></button>
+        </form>
+</div>
+
+

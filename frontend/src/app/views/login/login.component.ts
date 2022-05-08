@@ -1,4 +1,6 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  userForm! : FormGroup;
   constructor() { }
-
+  @Input () btnText!: string
   ngOnInit(): void {
   }
 
+  submit() {
+    console.log("Enviou formulário");
+  }
 }

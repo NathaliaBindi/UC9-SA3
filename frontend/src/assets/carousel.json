@@ -1,0 +1,34 @@
+{
+	"data": [
+		{
+			"id": "01",
+			"name": "XBOXSERIESS512GB",
+			"image": "produto01",
+			"price": 2309.90
+		},
+		{
+			"id": "02",
+			"name": "AMDRYZEN53600",
+			"image": "produto02",
+			"price": 1129.20
+		},
+		{
+			"id": "03",
+			"name": "CONTROLESEMFIOPS5",
+			"image": "controlesemfiops5",
+			"price": 395.91
+		},
+		{
+			"id": "04",
+			"name": "GABINETECORSAIR",
+			"image": "produto04",
+			"price": 724.02
+		},
+		{
+			"id": "05",
+			"name": "SSDSAMSUNGEVO1TB",
+			"image": "produto05",
+			"price": 1129.20
+		}
+	]
+}
