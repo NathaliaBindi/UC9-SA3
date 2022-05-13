@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "456@email.com",
+      "password": "123456",
+      "id": "2",
+      "nome": "caique",
+      "cpf": "12345678912",
+      "cep": "12345678"
+    }
+  ]
+}

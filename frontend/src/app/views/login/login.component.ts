@@ -1,6 +1,10 @@
+import { LoginService } from './shared/login.service';
+import { AccountService } from './shared/account.service';
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { User } from './shared/user'
+
 
 @Component({
   selector: 'app-login',
@@ -9,13 +13,19 @@ import { FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  userForm! : FormGroup;
-  constructor() { }
-  @Input () btnText!: string
+
+  constructor( private loginService: LoginService ) { }
   ngOnInit(): void {
   }
 
-  submit() {
-    console.log("Enviou formulário");
-  }
+  loginModel = new User ();
+  userModel = new User ("", "")
+  onsubmit() {
+    console.log(this.userModel)
+    console.log(this.loginModel)
+    
+    this.loginService.login(this.loginModel).subscribe((response)=>{
+      console.log (response)
+  })
+}
 }

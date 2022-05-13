@@ -1,5 +1,5 @@
 <div class="carousel bg-white" >
-<p-carousel [value]="products" styleClass="carousel" [numVisible]="4" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+<p-carousel [value]="products" styleClass="carousel" [numVisible]="4" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [showIndicators]="false" [showNavigators]="false" [responsiveOptions]="responsiveOptions">
     <ng-template pTemplate="header">
         <div class="carousel-title">
             <h5>Produtos Populares</h5>
@@ -15,7 +15,7 @@
                 </div>
                 <div>
                     <a>
-                        {{product.id}}
+                        <img class="product-image" [src]="product.image"/>
                     </a>
                     <h4 class="p-mb-1">{{product.name}}</h4>
                     <h6 class="p-mt-0 p-mb-3">R${{product.price}}</h6>

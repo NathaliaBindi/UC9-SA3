@@ -2,32 +2,32 @@
 	"data": [
 		{
 			"id": "01",
-			"name": "XBOXSERIESS512GB",
-			"image": "produto01",
+			"name": "XBOX SERIES S 512GB",
+			"image": "assets/img/produtos/XBOXSERIESS512GB.png",
 			"price": 2309.90
 		},
 		{
 			"id": "02",
-			"name": "AMDRYZEN53600",
-			"image": "produto02",
+			"name": "AMD RYZEN 5 3600",
+			"image": "assets/img/produtos/AMDRYZEN53600.png",
 			"price": 1129.20
 		},
 		{
 			"id": "03",
-			"name": "CONTROLESEMFIOPS5",
-			"image": "controlesemfiops5",
+			"name": "CONTROLE SEM FIO PS5",
+			"image": "assets/img/produtos/CONTROLESEMFIOPS5.png",
 			"price": 395.91
 		},
 		{
 			"id": "04",
-			"name": "GABINETECORSAIR",
-			"image": "produto04",
+			"name": "GABINETE CORSAIR",
+			"image": "assets/img/produtos/GABINETECORSAIR.png",
 			"price": 724.02
 		},
 		{
 			"id": "05",
-			"name": "SSDSAMSUNGEVO1TB",
-			"image": "produto05",
+			"name": "SSD SAMSUNG EVO 1TB",
+			"image": "assets/img/produtos/SSDSAMSUNGEVO1TB.png",
 			"price": 1129.20
 		}
 	]

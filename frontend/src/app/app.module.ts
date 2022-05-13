@@ -1,5 +1,5 @@
 import { ProductService } from './components/template/carousel/product.service';
-import { NgModule } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +21,10 @@ import { HttpClientModule } from '@angular/common/http';
 import {InputTextModule} from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidebarModule } from 'primeng/sidebar';
+
+import {InputMaskModule} from 'primeng/inputmask';
+
 
 
 
@@ -48,7 +52,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     InputTextModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SidebarModule,
+    InputMaskModule
   ],
   providers: [ ProductService ],
   bootstrap: [ AppComponent ]

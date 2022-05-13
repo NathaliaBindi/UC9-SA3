@@ -2,22 +2,22 @@
                 <h1 class="forms-title">identificação</h1>
 </span>
 <div class="forms bg-white">
-        <form (ngSubmit)="submit()" class="forms-login">
+        <form (ngSubmit)="onsubmit()" class="forms-login" #userform="ngForm">
                 <span class="forms-login-group-text">
                         <h2 class="forms-login-text">já tenho cadastro</h2>                        
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
-                        <input type="email" pInputText />
+                        <input type="email" name="email" id="email" [(ngModel)]="userModel.email" required />
                         <label for="float-input">E-mail</label>
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
                         <i class="pi pi-eye"></i>
-                        <input type="password" pInputText />
+                        <input type="password" name="password" id="password" [(ngModel)]="userModel.password" required />
                         <label for="float-input">Senha</label>
                 </span>
-                <button pButton pRipple type="button" label="ENTRAR" class="p-button-raised p-button-danger"></button>
+                <button pButton pRipple type="submit" label="ENTRAR" class="p-button-raised p-button-danger" [disabled]="form.form.invalid"></button>
 
                 <span class="recuperacao">
                         <a class="recuperacao-link">
@@ -50,41 +50,37 @@
 
         <div class="linha-vertical"></div>
         
-        <form (ngSubmit)="submit()" class="forms-login">
+        <form (ngSubmit)="onsubmit()" class="forms-login" #form="ngForm">
                 <span class="forms-login-group-text">
                         <h2 class="forms-login-text">quero me cadastrar</h2>                        
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
-                        <input type="email" pInputText />
+                        <input type="email" required />
                         <label for="float-input">E-mail</label>
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
                         <i class="pi pi-eye"></i>
-                        <input type="password" pInputText />
+                        <input type="password" required />
                         <label for="float-input">Crie sua senha</label>
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
                         <i class="pi pi-eye"></i>
-                        <input type="password" pInputText />
+                        <input type="password" required />
                         <label for="float-input">Confirme sua senha</label>
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
-                        <i class="pi pi-eye"></i>
-                        <input type="password" pInputText />
-                        <label for="float-input">CPF ou CPNJ</label>
+                        <input type="tel" required Mask/>
+                        <label for="float-input" >CPF ou CPNJ</label>
                 </span>
 
                 <span class="p-input-icon-right p-float-label">
-                        <i class="pi pi-eye"></i>
-                        <input type="password" pInputText />
+                        <input type="tel" required />
                         <label for="float-input">CEP</label>
                 </span>
-                <button pButton pRipple type="button" label="CADASTRAR" class="p-button-outlined p-button-danger"></button>
+                <button pButton pRipple type="button" label="CADASTRAR" class="p-button-outlined p-button-danger" [disabled]="form.form.invalid"></button>
         </form>
 </div>
-
-

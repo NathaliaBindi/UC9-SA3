@@ -29,3 +29,13 @@
 .header i:hover{
         color: #CF4F4F;
 }
+
+.sidebar {
+        background: #CF4F4F;
+}
+
+.p-button-success {
+        color: aquamarine;
+        background-color: blue;
+        background: #CF4F4F;
+}

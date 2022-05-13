@@ -1,6 +1,6 @@
 <mat-toolbar class="header mat-elevation-z5 bg-black ">
         <span class="left-group">
-                        <i class="material-icons v-middle text-white">
+                        <i type="button" (click)="visibleSidebar = true"  class="material-icons v-middle text-white">
                                 menu
                         </i>
         </span>
@@ -31,4 +31,13 @@
                 </a>
         </span>
 </mat-toolbar>
+
+<p-sidebar styleClass="sidebar" [(visible)]="visibleSidebar" [baseZIndex]="1" >
+        <p-button class="sidebar" type="button" (click)="visibleSidebar = false" label="Save" styleClass="p-button-success"></p-button>
+        <p-button type="button" (click)="visibleSidebar = false" label="Cancel" styleClass="p-button-secondary"></p-button>
+</p-sidebar>
+
+
+
+
 <router-outlet></router-outlet>
